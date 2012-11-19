@@ -1,0 +1,17 @@
+question:
+    phrase: "Do you like TheodoQuizBundle?"
+    bad_answers:
+        - Nope
+        - Maybe
+    correct_answers:
+        - Yes, I do
+        - Love it
+
+second_question:
+    phrase: "Would you like a second question?"
+    bad_answers:
+        - Arw
+        - Ugh?
+        - Uuk?
+    correct_answers:
+        - Give it to me!

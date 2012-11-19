@@ -1,0 +1,28 @@
+{
+    "name": "theodo/quiz-bundle",
+    "type": "symfony-bundle",
+    "description": "A simple quiz generator bundle",
+    "authors": [
+        {
+            "name": "Marek Kalnik",
+            "email": "marekk@theodo.fr"
+        }
+    ],
+    "require": {
+        "symfony/form": "2.1.x-dev",
+        "symfony/http-kernel": "2.1.x-dev",
+        "symfony/dependency-injection": "2.1.x-dev",
+        "symfony/validator": "2.1.x-dev"
+    },
+    "require-dev": {
+        "phake/phake": "dev-master",
+        "symfony/yaml": "2.1.x-dev"
+    },
+    "suggests": {
+        "symfony/yaml": "Allows using YamlQuestionManager."
+    },
+    "autoload": {
+        "psr-0": { "Theodo\\QuizBundle": "" }
+    },
+    "target-dir": "Theodo/QuizBundle"
+}
