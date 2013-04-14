@@ -1,0 +1,36 @@
+#content ul {
+    list-style-type: none;
+}
+
+#content ul li input[type="checkbox"] {
+    float: left;
+    margin-right: 10px;
+}
+
+#content #theodo_quiz_questions > div {
+    margin-top: 25px;
+}
+
+#content #theodo_quiz_questions > div > label {
+    float: left;
+    margin-right: 10px;
+}
+
+#content #theodo_quiz_questions > div > label:after {
+    content: ':';
+}
+
+#content #theodo_quiz_questions > ul {
+    padding: 20px 0 0 0;
+    color: red;
+    margin: 0;
+}
+
+#content form ul.actions {
+    margin-top: 50px;
+}
+
+#content form ul.actions li {
+    display: inline;
+    margin-right: 25px;
+}
