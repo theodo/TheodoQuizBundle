@@ -1,4 +1,7 @@
+{% form_theme form 'TheodoQuizBundle:Questions:widget.html.twig' %}
+
 <form method="POST">
     {{ form_widget(form) }}
 <button type="submit">Check my answers!</button>
 </form>
+<a href="{{ path(app.request.attributes.get('_route')) }}">New questions</a>
