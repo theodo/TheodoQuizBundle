@@ -33,11 +33,11 @@ class CorrectAnswerValidator extends ConstraintValidator
 
     private function getIncorrectAnswers($answers, $question)
     {
-        return array_intersect($answers, $question->getBadAnswers());
+        return array_diff($answers, $question->getCorrectAnswers());
     }
 
     private function getMissingCorrectAnswers($answers, $question)
     {
-        return array_diff($question->getCorrectAnswers(), $answers);
+        return array_diff(array_intersect($question->getChoices(), $question->getCorrectAnswers()), $answers);
     }
 }

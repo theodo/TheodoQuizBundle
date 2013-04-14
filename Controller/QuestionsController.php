@@ -19,6 +19,8 @@ class QuestionsController extends Controller
 
         
         $questions = $manager->parseYaml($yamlSource);
+        shuffle($questions);
+        $questions = array_slice($questions, 0, 5);
 
         $form = $this->get('form.factory')->create(new QuestionsType(), $questions);
 
