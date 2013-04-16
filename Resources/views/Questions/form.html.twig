@@ -1,7 +1,17 @@
-{% form_theme form 'TheodoQuizBundle:Questions:widget.html.twig' %}
+{% extends 'TheodoQuizBundle::layout.html.twig' %}
 
+{% form_theme form 'TheodoQuizBundle::form.layout.html.twig' %}
+
+{% block content %}
 <form method="POST">
     {{ form_widget(form) }}
-<button type="submit">Check my answers!</button>
+    <ul class="actions">
+        <li>
+            <button type="submit" class="btn btn-primary">Check my answers!</button>
+        </li>
+        <li>
+            <a href="{{ path(app.request.attributes.get('_route')) }}" class="btn">New questions</a>
+        </li>
+    </ul>
 </form>
-<a href="{{ path(app.request.attributes.get('_route')) }}">New questions</a>
+{% endblock %}

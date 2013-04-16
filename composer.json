@@ -12,7 +12,8 @@
         "symfony/form": ">=2.1,<2.3-dev",
         "symfony/http-kernel": ">=2.1,<2.3-dev",
         "symfony/dependency-injection": ">=2.1,<2.3-dev",
-        "symfony/validator": ">=2.1,<2.3-dev"
+        "symfony/validator": ">=2.1,<2.3-dev",
+        "twitter/bootstrap": "v2.3.1"
     },
     "require-dev": {
         "phake/phake": "dev-master",
@@ -24,5 +25,13 @@
     "autoload": {
         "psr-0": { "Theodo\\QuizBundle": "" }
     },
-    "target-dir": "Theodo/QuizBundle"
+    "target-dir": "Theodo/QuizBundle",
+    "scripts": {
+        "post-install-cmd": [
+            "Theodo\\QuizBundle\\Composer\\ScriptHandler::symlinkTwitterBootstrapFiles"
+        ],
+        "post-update-cmd": [
+            "Theodo\\QuizBundle\\Composer\\ScriptHandler::symlinkTwitterBootstrapFiles"
+        ]
+    }
 }
