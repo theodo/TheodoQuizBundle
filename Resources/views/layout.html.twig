@@ -1,0 +1,14 @@
+{% block stylesheets %}
+    <link href="{{ asset('bundles/twitter/bootstrap/css/bootstrap.css') }}" type="text/css" rel="stylesheet" />
+    <link href="{{ asset('bundles/twitter/bootstrap/css/bootstrap-responsive.css') }}" type="text/css" rel="stylesheet" />
+    <link href="{{ asset('bundles/theodoquiz/css/questions.css') }}" type="text/css" rel="stylesheet" />
+{% endblock %}
+
+<div id="content" class="container-fluid">
+    <div class="row-fluid">
+        <div class="offset2">
+        <h1>{{ title|default("Theodo Quiz") }}</h1>
+        {% block content %}{% endblock %}
+        </div>
+    </div>
+</div>
