@@ -17,7 +17,7 @@ the repositories already available in your ``composer.json`` file.
         {...},
         {
             "type": "vcs",
-            "url": "https://github.com/CharlyP/TheodoQuizBundle.git"
+            "url": "https://github.com/theodo/TheodoQuizBundle.git"
         }
     ],
 
