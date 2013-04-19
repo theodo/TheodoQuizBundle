@@ -7,7 +7,11 @@
         {% for child in form %}
             <li>
             {{ form_widget(child) }}
-            {{ form_label(child) }}
+                <br />
+                {{ child.vars.label|raw }}
+            {% else %}
+                {{ form_label(child) }}
+            {% endif %}
             </li>
         {% endfor %}
         </ul>
