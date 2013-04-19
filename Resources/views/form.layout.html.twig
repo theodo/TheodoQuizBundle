@@ -7,6 +7,7 @@
         {% for child in form %}
             <li>
             {{ form_widget(child) }}
+            {% if "\n" in child.vars.label %}
                 <br />
                 {{ child.vars.label|raw }}
             {% else %}
