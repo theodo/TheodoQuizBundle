@@ -8,6 +8,7 @@
             "email": "marekk@theodo.fr"
         }
     ],
+    "license": "MIT",
     "require": {
         "symfony/form": ">=2.1,<2.3-dev",
         "symfony/http-kernel": ">=2.1,<2.3-dev",
@@ -19,7 +20,7 @@
         "phake/phake": "dev-master",
         "symfony/yaml": ">=2.1,<2.3-dev"
     },
-    "suggests": {
+    "suggest": {
         "symfony/yaml": "Allows using YamlQuestionManager."
     },
     "autoload": {
@@ -33,5 +34,10 @@
         "post-update-cmd": [
             "Theodo\\QuizBundle\\Composer\\ScriptHandler::symlinkTwitterBootstrapFiles"
         ]
+    },
+    "extra": {
+        "branch-alias": {
+            "dev-master": "1.0.x-dev"
+        }
     }
 }
